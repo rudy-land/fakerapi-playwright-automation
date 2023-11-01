@@ -1,16 +1,6 @@
-import { defineConfig } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
-export default defineConfig({
-  testDir: './tests',
-  use: {
-    // All requests we send go to this API endpoint.
-    baseURL: 'https://fakerapi.it/en',
-    extraHTTPHeaders: {
-      // We set this header per GitHub guidelines.
-      'Accept': 'application/vnd.github.v3+json',
-      // Add authorization token to all requests.
-      // Assuming personal access token available in the environment.
-      //'Authorization': `token ${process.env.API_TOKEN}`,
-    },
-  }
+test('should retrieve one Address', async ({ request }) => {
+    const anAddress = await request.get(`/repos/api/v1/addresses?_quantity=1`);
+    expect(anAddress.ok()).toBeTruthy();
 });
