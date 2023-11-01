@@ -1,5 +1,7 @@
 import { defineConfig } from '@playwright/test';
+
 export default defineConfig({
+  testDir: './tests',
   use: {
     // All requests we send go to this API endpoint.
     baseURL: 'https://fakerapi.it/en',
