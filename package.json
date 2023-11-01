@@ -1,0 +1,22 @@
+{
+  "name": "fakerapi-playwright-automation",
+  "version": "1.0.0",
+  "description": "This is a personal project to use Playwright to automate the API `end points` in https://fakerapi.it/en",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudy-land/fakerapi-playwright-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudy-land/fakerapi-playwright-automation/issues"
+  },
+  "homepage": "https://github.com/rudy-land/fakerapi-playwright-automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.10"
+  }
+}
