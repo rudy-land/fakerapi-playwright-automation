@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "This is a personal project to use Playwright to automate the API `end points` in https://fakerapi.it/en",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test --project=chromium"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rudy-land/fakerapi-playwright-automation.git"
