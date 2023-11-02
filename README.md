@@ -11,9 +11,8 @@ The `base end point` is defined by the variable `baseURL` defined in `playwright
 
 # Getting started
 1. Clone repository
-2. Install dependencies using either of the below commands
+2. Install dependencies using the command
 	```js
-	npm ci
 	npm i
 	```
 3. Install playwright dependencies
