@@ -23,3 +23,6 @@ The `base end point` is defined by the variable `baseURL` defined in `playwright
 	```js
 	npm run test
 	```
+
+# Note:  
+See comments in `tests` and `resources` files for the new features to come (mostly `refactoring` the current tests)
