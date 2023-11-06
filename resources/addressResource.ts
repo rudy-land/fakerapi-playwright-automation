@@ -1,9 +1,11 @@
-// Here define a class AddressResource
+export class AddressResource {
+    readonly addressUrl: string;
 
-// This class has a:
-// // const to hold '/api/v1/addresses'
+    constructor() {
+        this.addressUrl = `/api/v1/addresses`;
+    }
 
-// // a method to call a response with a quantity parameter
-// // something like addressResource.requestGet(quantity)
-// // it returns something like `/api/v1/addresses?_quantity=1`
-
+	requestGet(quantity: string) 	{
+		return this.addressUrl + `?_quantity=${quantity}`;
+	}    
+}
