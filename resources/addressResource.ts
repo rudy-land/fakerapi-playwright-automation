@@ -1,11 +1,11 @@
 export class AddressResource {
-    readonly addressUrl: string;
+    readonly addressesUrl: string;
 
     constructor() {
-        this.addressUrl = `/api/v1/addresses`;
+        this.addressesUrl = `/api/v1/addresses`;
     }
 
 	requestGet(quantity: string) 	{
-		return this.addressUrl + `?_quantity=${quantity}`;
+		return this.addressesUrl + `?_quantity=${quantity}`;
 	}    
 }

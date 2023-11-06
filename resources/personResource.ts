@@ -1,9 +1,11 @@
+export class PersonResource {
+    readonly personsUrl: string;
 
-// Here define a class PersonResource
+    constructor() {
+        this.personsUrl = `/api/v1/persons`;
+    }
 
-// This class has a:
-// // const to hold '/api/v1/persons'
-
-// // a method to call a response with a the following optional parameters
-// // something like personResource.requestGet(quantity, gender, bdayStart, bdayEnd)
-// // it returns something like `/api/v1/persons?_quantity=1&_gender=female`
+	requestGet(quantity: string, gender?: string, bdayStart?: string, bdayEnd?: string) 	{
+		return this.personsUrl + `?_quantity=${quantity}&_gender=${gender}&_bdayStart=${bdayStart}&_bdayEnd=${bdayEnd}`;
+	}    
+}
